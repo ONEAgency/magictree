@@ -272,7 +272,7 @@ final class Branch implements ArrayAccess, Iterator, JsonSerializable, Node, Cou
      * @param array $keyParts
      * @return Node
      */
-    private function getByKeyParts(array $keyParts)
+    public function getByKeyParts(array $keyParts)
     {
         $first = array_shift($keyParts);
         $node = $this->getNode($first);
